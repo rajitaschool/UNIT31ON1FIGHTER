@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajit Ahmed Project 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body onload="randomizeStats();">
+    <div class="header">
+        <h1>Rajit Ahmed Project 3</h1>
+    </div>
+    <div class="container">
+        <div class="column">
+            <div id = "playerFatigueHeader"></div>
+            <progress id="playerFatigue" value="" max=""></progress>
+            <div class="playerBox">
+                <img id = "playerSprite" src="Boxer-Sprites/stillP1.png" alt="Player Sprite">
+            </div>
+            <div class="playerStats">
+                <div class="stat">
+                    <p>Strength: <span id="playerStrength">0</span></p>
+                </div>
+                <div class="stat">
+                    <p>Speed: <span id="playerSpeed">0</span></p>
+                </div>
+                <div class="stat">
+                    <p>Cunning: <span id="playerCunning">0</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="column gameLog">
+            <div id="logContent">Your boxing log content goes here.</div>
+        </div>
+        <div class="column">
+            <div id = "cpuFatigueHeader"></div>
+            <progress id="cpuFatigue" value="" max=""></progress>
+            <div class="cpuBox">
+                <img id = "cpuSprite" src="Boxer-Sprites/stillCPU.png" alt="CPU Sprite">
+            </div>
+            <div class="cpuStats">
+                <div class="stat">
+                    <p>Strength: <span id="cpuStrength">0</span></p>
+                </div>
+                <div class="stat">
+                    <p>Speed: <span id="cpuSpeed">0</span></p>
+                </div>
+                <div class = "stat">
+                    <p>Cunning: <span id="cpuCunning">0</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = buttons>
+        <button id="attackButton">ATTACK</button>
+        <button id="blockButton">BLOCK</button>
+        <button id="finishingMoveButton" disabled>FINISHING MOVE</button>
+    </div>
+
+    <script src="utilities.js"></script> <!--Placed at the end so entire page can load before scripts are called, else runs error for me-->
+</body>
+</html>

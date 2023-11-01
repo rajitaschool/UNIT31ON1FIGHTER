@@ -1,0 +1,93 @@
+body {
+    background-color: black;
+    text-align: center;
+    font-family: 'Press Start 2P', sans-serif;
+    color: gold;
+    margin: 0;
+}
+
+.container {
+    display: flex; /* To make all the divs within each other align*/
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.column {
+    flex: 1; /* So all the divs take up similar space*/
+    display: flex;
+    flex-direction: column; /* So I can present the page in a side by side format*/
+    align-items: center;
+    
+    padding: 10px;
+}
+
+#cpuFatigueHeader, #playerFatigueHeader {
+    color: white;
+    size: 18px;
+}
+
+progress {
+    width: 40%;
+    height: 20px;
+    color: white;
+}
+
+.playerBox, .cpuBox {
+    margin: 20px 0;
+}
+
+img {
+    height: 300px; 
+}
+
+.playerStats, .cpuStats {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.stat {
+    margin: 10px 0;
+    
+}
+
+.gameLog {
+    background-color: lightyellow;
+    color: black;
+    padding: 20px;
+    text-align: left;
+    max-width: 300px; 
+    overflow: scroll; /* Add scroll for overflow content */
+    height: 370px; 
+    border: 2px solid yellow; /* Add a yellow outline to the gameLog box */
+    flex-direction: column-reverse; /* Introduced so that the gameLog is always being sent to the bottom to present the newest information */
+}
+
+.buttons{
+    margin-top: 100px;
+}
+
+#attackButton, #blockButton, #finishingMoveButton {
+    padding: 20px 120px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    font-family: 'Press Start 2P', sans-serif;
+    transition: background-color 0.15s;
+}
+
+#attackButton:hover {
+    color:white;
+    background-color:rgb(170, 51, 51);
+}
+
+#blockButton:hover {
+    color:white;
+    background-color:rgb(88, 184, 88);
+}
+
+#finishingMoveButton:hover{
+    color:white;
+    background-color: rgb(201, 165, 98);
+}
