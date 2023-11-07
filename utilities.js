@@ -245,10 +245,10 @@ function cpuWin() {
     document.querySelector(".cpuBox").style.border = "thick solid gold"; //To distinguish who won the boxing match
     playerSwitchImage("stumbleP1.png", "knockdownP1.png");
     
-    setTimeout(function() { //Calls alert function to bring up a box to let the user know they lost. Calls 3 seconds after the playerSwitch
+    setTimeout(() => { //Calls alert function to bring up a box to let the user know they lost. Calls 3 seconds after the playerSwitch
         alert("CPU has won the boxing match! Refresh to Try Again!");
-        console.log (`CPU has won the match with a fatigue of : ${cpuFatigue}`); //Prints to console the amount of fatigue CPU won with
     }, 3000);
+    console.log (`CPU has won the match with a fatigue of : ${cpuFatigue}`); //Prints to console the amount of fatigue CPU won with
 }
 
 function playerWin() {
@@ -259,10 +259,10 @@ function playerWin() {
     document.querySelector(".playerBox").style.border = "thick solid gold"; //To distinguish who won the boxing match
     cpuSwitchImage("stumbleCPU.png", "knockdownCPU.png");
 
-    setTimeout(function() { //Calls alert function to bring up a box to let the user know they won. Calls 3 seconds after the cpuSwitch
+    setTimeout(() => { //Calls alert function to bring up a box to let the user know they won. Calls 3 seconds after the cpuSwitch
         alert("You have won the boxing match! Refresh to Try Again!");
-        console.log (`You have won the match with a fatigue of : ${userFatigue}`); //Prints to console the amount of fatigue user won with
     }, 3000);
+    console.log (`You have won the match with a fatigue of : ${userFatigue}`); //Prints to console the amount of fatigue user won with
 }
 
 
